@@ -1,0 +1,136 @@
+/***********************************************************************
+ * Module:  Alfil.cpp
+ * Author:  Jeimy
+ * Modified: viernes, 27 de enero de 2023 8:58:41
+ * Purpose: Implementation of the class Alfil
+ ***********************************************************************/
+
+#include "Alfil.h"
+#include <fstream>
+#include <iostream>
+#define MAX 8
+
+using namespace std;
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::getValidar__()
+// Purpose:    Implementation of Alfil::getValidar__()
+// Return:     bool
+////////////////////////////////////////////////////////////////////////
+Alfil::Alfil(int n1)
+{
+   	this->n=n1;
+	this->validar=new bool *[MAX];
+	this->tablero=new char *[MAX];
+	
+   
+}
+
+bool** Alfil::getValidar(void)
+{
+   return validar;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::setValidar__(bool newValidar__)
+// Purpose:    Implementation of Alfil::setValidar__()
+// Parameters:
+// - newValidar__
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Alfil::setValidar(bool **newValidar)
+{
+   validar = newValidar;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::getTablero__()
+// Purpose:    Implementation of Alfil::getTablero__()
+// Return:     char
+////////////////////////////////////////////////////////////////////////
+
+char** Alfil::getTablero(void)
+{
+   return tablero;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::setTablero__(char newTablero__)
+// Purpose:    Implementation of Alfil::setTablero__()
+// Parameters:
+// - newTablero__
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Alfil::setTablero(char **newTablero)
+{
+   tablero= newTablero;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::getContador()
+// Purpose:    Implementation of Alfil::getContador()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int Alfil::getContador(void)
+{
+   return contador;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::setContador(int newContador)
+// Purpose:    Implementation of Alfil::setContador()
+// Parameters:
+// - newContador
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Alfil::setContador(int newContador)
+{
+   contador = newContador;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::getN()
+// Purpose:    Implementation of Alfil::getN()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int Alfil::getN(void)
+{
+   return n;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::setN(int newN)
+// Purpose:    Implementation of Alfil::setN()
+// Parameters:
+// - newN
+// Return:     void
+////////////////////////////////////////////////////////////////////////
+
+void Alfil::setN(int newN)
+{
+   n = newN;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::Alfil(int n1)
+// Purpose:    Implementation of Alfil::Alfil()
+// Parameters:
+// - n1
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////
+// Name:       Alfil::~Alfil()
+// Purpose:    Implementation of Alfil::~Alfil()
+// Return:     
+////////////////////////////////////////////////////////////////////////
+
+Alfil::~Alfil()
+{
+   // TODO : implement
+}
